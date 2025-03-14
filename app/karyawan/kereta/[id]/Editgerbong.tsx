@@ -95,7 +95,7 @@ const Editgerbong = (myprops: props) => {
       <Modal isShow={show}>
       <form onSubmit={(e) => handleSubmit(e)}>
             <div className="w-full p-3 rounded-t-md">
-              <h1 className="font-semibold text-lg text-black">Tambah Kereta</h1>
+              <h1 className="font-semibold text-lg text-black">Edit Gerbong</h1>
               <span className="text-sm text-slate-500">
                 Pastikan data terisi dengan benar
               </span>
