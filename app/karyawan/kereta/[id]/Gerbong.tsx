@@ -10,7 +10,6 @@ interface props {
 
 const Gerbong = (myProps: props) => {
 
-  const gerbongId: number = Number(myProps.item.id) as number
   return (
     <div className="w-full my-2 bg-slate-50 rounded-md shadow-md flex flex-wrap justify-between">
       <div className="p-3">

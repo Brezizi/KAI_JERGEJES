@@ -16,7 +16,6 @@ const Addseat = (myprops: props) => {
   const [seatNumber, setSeatNumber] = useState<string>("")
   const router = useRouter()
 
-  const openModal = () => setShow(true)
   const closeModal = () => setShow(false)
 
   const handleSubmit = async (e: React.FormEvent) => {

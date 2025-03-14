@@ -49,25 +49,6 @@ const Booking = (myProp: props) => {
     setWagons([...tempWagons]);
   };
 
-  const handleRemoveSeat = (index: number, seatBook: SeatBook) => {
-    const temp = [...details];
-    temp.splice(index, 1);
-    setDetails(temp);
-
-    const tempWagons = [...wagons];
-    /** mencari posisi index dari gerbong yang mempunyai "seat_number" dari yang dipilib user */
-    const findWagonIndex = tempWagons.findIndex((item) =>
-      item.seats.map((it) => it.seat_number).includes(seatBook.seat_number)
-    );
-    /** mencari posisi index dari kursi yang dipilih */
-    const findSeatIndex = tempWagons[findWagonIndex].seats.findIndex(
-      (item) => item.seat_number === seatBook.seat_number
-    );
-    /** update status kursi */
-    tempWagons[findWagonIndex].seats[findSeatIndex].used = false;
-
-    setWagons([...tempWagons]);
-  };
 
   const handleSave = async () => {
     try {

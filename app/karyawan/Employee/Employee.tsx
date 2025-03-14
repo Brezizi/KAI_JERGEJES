@@ -1,6 +1,5 @@
 import React from "react";
 import { User } from "../types";
-import EditKereta from "../kereta/EditKereta";
 import Editemployee from "./Editemployee";
 import Deleteemployee from "./Deleteemployee";
 import Forgotpassword from "./Forgotpassword";
